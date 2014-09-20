@@ -2,7 +2,7 @@
 var top_ten = getTopTen();
 var app = angular.module('stats', []);
 var me = getMyInfo();
-var pro = i.groupme.com/180x248.jpeg.43da72809e780131792522000ae7065f); 
+var pro = "i.groupme.com/180x248.jpeg.43da72809e780131792522000ae7065f"; 
 app.controller('user', ['$scope', function($scope) {
   $scope.username = me.name;
 }]);
