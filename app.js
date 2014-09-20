@@ -1,4 +1,4 @@
-var x = getParameterByName(access_token); 
+var x = getParameterByName("access_token"); 
 console.log(x); 
 
 
