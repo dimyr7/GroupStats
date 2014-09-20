@@ -12,42 +12,42 @@ app.controller('M1', ['$scope', function($scope) {
 }]);
 app.controller('M2', ['$scope', function($scope) {
   $scope.text = top_ten[1].text;
-  $scope.name = 'Bill';
+  $scope.name = top_ten[1].name;
   $scope.group = '4TS'; 
 }]);
 app.controller('M3', ['$scope', function($scope) {
   $scope.text = top_ten[2].text;
-  $scope.name = 'Dima';
+  $scope.name = top_ten[2].name;
   $scope.group = 'Lakehouse'; 
 }]);
 app.controller('M4', ['$scope', function($scope) {
   $scope.text = top_ten[3].text;
-  $scope.name = 'Nate';
+  $scope.name = top_ten[3].name;
   $scope.group = 'Right Now'; 
 }]);
 app.controller('M5', ['$scope', function($scope) {
   $scope.text = top_ten[4].text;
-  $scope.name = 'Jordyn';
+  $scope.name = top_ten[4].name;
   $scope.group = 'Fucked Up'; 
 }]);
 app.controller('M6', ['$scope', function($scope) {
   $scope.text = top_ten[5].text;
-  $scope.name = 'Ellie';
+  $scope.name = top_ten[5].name;
   $scope.group = 'The OGs'; 
 }]);
 app.controller('M7', ['$scope', function($scope) {
   $scope.text = top_ten[6].text;
-  $scope.name = 'Ben';
+  $scope.name = top_ten[6].name;
   $scope.group = 'Hackathon'; 
 }]);
 app.controller('M8', ['$scope', function($scope) {
   $scope.text = top_ten[7].text;
-  $scope.name = 'Doug';
+  $scope.name = top_ten[7].name;
   $scope.group = 'Who is Doug'; 
 }]);
 app.controller('M9', ['$scope', function($scope) {
   $scope.text = top_ten[8].text;
-  $scope.name = 'Fuck';
+  $scope.name = top_ten[8].name;
   $scope.group = 'nosleep'; 
 }]);
 
