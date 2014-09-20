@@ -10,4 +10,4 @@ user.name;
 
 //GET /direct_messages
 var dm = "json obj;
-dm.count
+dm.count;
