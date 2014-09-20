@@ -1,4 +1,15 @@
 
+function getMyInfo(){
+	var gmurl = "https://api.groupme.com/v3/";
+	var token = "?token="+getParameterByName("access_token");
+	var req = new XMLHttpRequest();
+	req.open('GET', gmurl+"users/me"+token, false);
+	req.send(null);
+	if(req.status==200){
+		var s = JSON.parse(req.responseText);
+		return s.response;
+	}
+}
 function getTopTen(){
 	var gmurl = "https://api.groupme.com/v3/";
 	var token = "?token="+getParameterByName("access_token");
@@ -6,6 +17,7 @@ function getTopTen(){
 	var finalMess = [];
 	var allGroups = [];
 	var req = new XMLHttpRequest();
+	var me = getMyInfo();
 	req.open('GET', gmurl+"groups"+token, false);
 	req.send(null);
 	if(req.status==200){
@@ -24,7 +36,13 @@ function getTopTen(){
 		if(req.status==200){
 			var s = JSON.parse(req.responseText);
 			for(var j = 0; j < s.response.messages.length; j++){
+				if(me.id!=s.response.messages[j].user_id){
+				console.log(s.response.messages[j].name)
+				console.log(me.id);
+				console.log(s.response.messages[j].user_id);
 				allMesseges.push(s.response.messages[j]);
+			}
+				
 			}
 			//console.log("good");
 		}
@@ -49,6 +67,11 @@ function getParameterByName(name) {
         results = regex.exec(location.search);
     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 };
+
+function getTopFriends(){
+
+}
+
 /*
 function getTopTenGroups(){
 	var gmurl = "https://api.groupme.com/v3/";
