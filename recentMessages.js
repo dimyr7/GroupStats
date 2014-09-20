@@ -88,11 +88,19 @@ function getTopFriends(){
 		if(req.status==200){
 			var s = JSON.parse(req.responseText);
 			for(var j = 0; j < s.response.messages.length; j++){
-				allMesseges.push(s.response.messages[j])
-				if(counter[s.response.messages[j].user_id] == undefined){
-					counter[s.response.messages[j].user_id]=0;
+				if(me.id==s.response.messages[j].user_id){
+
 				}
-				counter[s.response.messages[j].user_id]++;
+				else if(s.response.messages[j].name=="GroupMe"){
+					console.log("dasadasd");
+				}
+				else {
+					allMesseges.push(s.response.messages[j])
+					if(counter[s.response.messages[j].user_id] == undefined){
+						counter[s.response.messages[j].user_id]=0;
+					}
+					counter[s.response.messages[j].user_id]++;
+				}
 			}
 		} 
 	}
@@ -116,6 +124,6 @@ function getTopFriends(){
 			}
 		}
 	}
-	console.log(array);
+	//console.log(array);
 	return array;
 }
