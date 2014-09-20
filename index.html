@@ -155,7 +155,7 @@
 		<div id ="lazy"></div>
 		<div ng-repeat="friend in friends">
         <div id="friend2">
-            <div id="hpic"></div>
+            <div id="hpic" style="background:url({{friend.pic}}) 0 0 no-repeat; background-size:contain;"></div>
             <div id ="Name">{{friend.id}}</div>
             <div id ="messcount">{{friend.c}} Messages</div>
         </div>
