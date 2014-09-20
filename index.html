@@ -65,11 +65,11 @@
       				function drawChart() {
         			var data = google.visualization.arrayToDataTable([
           				['Day', 'Sent', 'Recieved'],
-          				['Today',  	   		2000,400],
-          				['Yesterday',  		600,460],
-          				['9/17', 			660,400],
-          				['9/16',  			1030,540],
-          				['9/15',  			143, 300]
+          				['Today',  	   		t.s[0],t.r[0]],
+          				['Yesterday',  		t.s[1],t.r[1]],
+          				['9/17', 			    t.s[2],t.r[2]],
+          				['9/16',  			  t.s[3],t.r[3]],
+          				['9/15',  			  t.s[4],t.r[4]]
         			]);
 
         			var options = {

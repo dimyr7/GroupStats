@@ -4,7 +4,7 @@ if (x == ""){
   window.location="https://oauth.groupme.com/oauth/authorize?client_id=HvgtfdoiyqVpz9fuHrBGrnb0vCmw0VXnMkXL1cG91NtoETFf";
 }
 
-
+var t = getSR();
 
 var top_ten = getTopTen();
 var top_friends = getTopFriends();
