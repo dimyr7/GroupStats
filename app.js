@@ -1,6 +1,6 @@
 
 var top_ten = getTopTen();
-getTopFriends();
+/*getTopFriends();*/
 var app = angular.module('stats', []);
 var me = getMyInfo();
 
