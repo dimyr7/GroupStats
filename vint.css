@@ -171,6 +171,7 @@
 	background-size: contain;
 	background-position: center center;
 	float:left;
+	display: inline-block;
 }
 #Name{
 
