@@ -149,3 +149,21 @@
 	background-position: center center;
 	background-size:contain;
 }
+#Name{
+
+	text-decoration: none;
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 20px;
+	margin-left: 80px;
+	margin-top: 5px;
+	padding-top: 20px;
+}
+#messcount{
+	text-decoration: none;
+	color: #888888; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 13px;
+	margin-left: 80px;
+	margin-top: 0px;
+}
