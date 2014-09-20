@@ -1,1 +1,133 @@
-This is Vint
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="vint.css">
+
+	<title> Vint - Home </title>
+
+</head>
+
+<body id ="content">
+	<div id ="trim">
+		<div id ="logo">
+		</div>
+	</div>
+
+	<div id ="left">
+
+
+
+	</div>
+
+	<div id ="center">
+
+
+	
+		<div id ="topc">
+			<html>
+ 			 <head>
+    		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    		<script type="text/javascript">
+      		google.load("visualization", "1", {packages:["corechart"]});
+      		google.setOnLoadCallback(drawChart);
+      		function drawChart() {
+        	var data = google.visualization.arrayToDataTable([
+          		['Day', 'Sent', 'Recieved'],
+          		['Today',  	   		2000,400],
+          		['Yesterday',  		600,460],
+          		['9/17', 			660,400],
+          		['9/16',  			1030,540],
+          		['9/15',  			143,      300]
+        	]);
+
+        	var options = {
+          	title: '',
+          	vAxis: {title: '',  titleTextStyle: {color: 'blue'},
+
+          	}
+        	};
+
+        	var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+        	chart.draw(data, options);
+      		}
+    		</script>
+  			</head>
+  			<body>
+    		<div id="chart_div" style="width: 792px; height: 300px;"></div>
+  			</body>
+			</html>
+		</div>
+
+
+
+
+		<div id ="bottomc">
+			<html>
+ 			<head>
+    		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+   			<script type="text/javascript">
+      		google.load("visualization", "1", {packages:["corechart"]});
+     		google.setOnLoadCallback(drawChart);
+     		var group1 = 'Group1';
+     		var group2 = 'Group2';
+     		var group3 = 'Group3';
+     		var group4 = 'Group4';
+     		var other = 'Other';
+      		function drawChart() {
+        	var data = google.visualization.arrayToDataTable([
+          		['Top Groups', '# of Messages'],
+          		[group1,     100],
+          		[group2,      55],
+          		[group3,  45],
+          		[group4, 34],
+          		[other,    20]
+        		]);
+
+        	var options = {
+          		title: '',
+          		pieHole: 0.6,
+          		chartArea:{width:'80%',height:'80%'},
+          		slices: {  
+                  	0: { color: '#0066FF' },
+                  	0: { offset: 0.0 },
+                  	1: { color: '#78ADFF' },
+                  	2: { color: '#1975FF' },
+                  	3: { color: '#69A4FF' },
+                  	4: { color: '#3083FF' },
+                  	5: { color: '#458FFF' },
+                  	6: { color: '#589AFF' },
+                  },
+        		};
+
+        		var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        		chart.draw(data, options);
+      			}
+    		</script>
+  			</head>
+  			<body>
+    		<div id="donutchart" style="width: 792px; height: 400px;"></div>
+  			</body>
+			</html>
+
+		</div>
+
+
+
+
+	</div>
+
+	<div id ="right">
+	</div>
+
+
+
+
+
+
+</body>
+
+</html>

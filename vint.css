@@ -1,0 +1,54 @@
+#content {
+	width:1400px; 
+	margin:0 auto;
+	background:#FFFFFF;
+}
+
+#trim {
+	height: 60px; 
+	top: 0;
+	width:1400px;
+	background:#110011;
+}
+#logo{
+	height: 60px;
+	left: 100px;
+	width: 200px;
+	position: absolute;
+	
+	background:url(1.png) 0 0 no-repeat;
+
+}
+
+#left {
+	width: 300px; 
+	height: 700px; 
+	top:100;
+	background:#FF0011;
+	display: inline-block;
+
+}
+
+#center {
+	width:792px; 
+	height:700px;
+	margin:0 auto;
+	/*background:#FF00FF;*/
+	display: inline-block;
+
+}
+
+#topc {
+
+	height:300px;
+	background:#334433;
+}
+
+#right {
+	width:300px; 
+	height:700px;
+	
+	background:#1100FF;
+	display: inline-block;
+
+}
