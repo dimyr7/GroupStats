@@ -26,9 +26,9 @@
 <div id ="trim">
 		<div id ="logo">
 		</div>
-		<div id ="account">
-		<div id ="propic"></div>
-		<h1 id ="username" ng-controller="user"> {{username}} </h1>
+		<div id ="account" ng-controller="user">
+        <div id ="propic" style="background:url({{propic_image}}) 0 0 no-repeat; background-size:contain;"></div>
+		<h1 id ="username"> {{username}} </h1>
 		</div>
 </div>
 
@@ -37,72 +37,17 @@
 <body id ="content">
 	
 
-	<div id ="left">
+	<div id ="left" ng-controller="left">
 		<div id ="Recent"></div>
 		<div id ="lazyborder"></div>
-		<div id ="mess" ng-controller="M1">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M2">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M3">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M4">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M5">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M6">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M7">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M8">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
-		<div id ="mess" ng-controller="M9">
-			<div id ="gpic"></div>
-			<h1 id ="text">"{{text}}"</h1>
-			<h2 id ="User">-{{name}}</h3>
-			<h3 id ="Group">{{group}}</h2>
-			
-		</div>
+    <div ng-repeat="mess in messages">
+        <div id="mess">
+            <div id="gpic"></div>
+            <h1 id ="text">{{mess.text}}</h1>
+            <h2 id ="User">{{mess.name}}</h2>
+            <h3 id ="Group">{{mess.group}}</h3>
+        </div>
+    </div>
 	</div>
 
 	<div id ="center">

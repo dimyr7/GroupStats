@@ -4,57 +4,19 @@ getTopFriends();
 var app = angular.module('stats', []);
 var me = getMyInfo();
 
-
-app.controller('user', ['$scope', function($scope) {
-  $scope.username = me.name;
-}]);
-app.controller('M1', ['$scope', function($scope) {
-  $scope.text = top_ten[0].text.length>20?top_ten[0].text.substring(0,22)+"...":top_ten[0].text;
-  $scope.name = top_ten[0].name;
-  $scope.group = (new Date(top_ten[0].created_at*1000).toString().substring(0,24)); 
-}]);
-app.controller('M2', ['$scope', function($scope) {
-  $scope.text = top_ten[1].text.length>20?top_ten[1].text.substring(0,22)+"...":top_ten[1].text;
-  $scope.name = top_ten[1].name;
-  $scope.group = (new Date(top_ten[1].created_at*1000).toString().substring(0,24));
-}]);
-app.controller('M3', ['$scope', function($scope) {
-  $scope.text = top_ten[2].text.length>20?top_ten[2].text.substring(0,22)+"...":top_ten[2].text;
-  $scope.name = top_ten[2].name;
-  $scope.group = (new Date(top_ten[2].created_at*1000).toString().substring(0,24)); 
-}]);
-app.controller('M4', ['$scope', function($scope) {
-  $scope.text = top_ten[3].text.length>20?top_ten[3].text.substring(0,22)+"...":top_ten[3].text;
-  $scope.name = top_ten[3].name;
-  $scope.group = (new Date(top_ten[3].created_at*1000).toString().substring(0,24));
-}]);
-app.controller('M5', ['$scope', function($scope) {
-  $scope.text = top_ten[4].text.length>20?top_ten[4].text.substring(0,22)+"...":top_ten[4].text;
-  $scope.name = top_ten[4].name;
-  $scope.group = (new Date(top_ten[4].created_at*1000).toString().substring(0,24));
-}]);
-app.controller('M6', ['$scope', function($scope) {
-  $scope.text = top_ten[5].text.length>20?top_ten[5].text.substring(0,22)+"...":top_ten[5].text;
-  $scope.name = top_ten[5].name;
-  $scope.group = (new Date(top_ten[5].created_at*1000).toString().substring(0,24));
-}]);
-app.controller('M7', ['$scope', function($scope) {
-  $scope.text = top_ten[6].text.length>20?top_ten[6].text.substring(0,22)+"...":top_ten[6].text;
-  $scope.name = top_ten[6].name;
-  $scope.group = (new Date(top_ten[6].created_at*1000).toString().substring(0,24));
-}]);
-app.controller('M8', ['$scope', function($scope) {
-  $scope.text = top_ten[7].text.length>20?top_ten[7].text.substring(0,22)+"...":top_ten[7].text;
-  $scope.name = top_ten[7].name;
-  $scope.group = (new Date(top_ten[7].created_at*1000).toString().substring(0,24));
-}]);
-app.controller('M9', ['$scope', function($scope) {
-  $scope.text = top_ten[8].text.length>20?top_ten[8].text.substring(0,22)+"...":top_ten[8].text;
-  $scope.name = top_ten[8].name;
-  $scope.group = (new Date(top_ten[8].created_at*1000).toString().substring(0,24));
-}]);
-
-
+app.controller('user', function($scope) {
+    $scope.username = me.name;
+    $scope.propic_image = me.image_url;
+});
+app.controller('left', function($scope) {
+    $scope.messes = [];
+    for(var i = 0; i < top_ten.length && i < 10; ++i){
+        $scope.messes[i] = {};
+        $scope.messes[i].text = top_ten[i].text.length > 20 ? top_ten[i].text.substring(0,22)+"..." : top_ten[i].text;
+        $scope.messes[i].name = top_ten[i].name;
+        $scope.messes[i].group = (new Date(top_ten[i].created_at*1000).toString().substring(0,24)); 
+    }
+});
 
 app.controller('F1', ['$scope', function($scope) {
   $scope.name = 'White Nick';
