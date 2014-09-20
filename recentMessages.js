@@ -40,8 +40,8 @@ function getTopTen(){
 	for(var i = 0; i < finalMess.length; i++){
 		console.log(finalMess[i].text+(new Date(finalMess[i].created_at*1000)));
 	}
-
-});
+	return finalMess; 
+};
 /*
 	$.getJSON(gmurl+"groups"+token, function(data){
 		var allGroups = [];
