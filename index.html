@@ -127,9 +127,8 @@
         			]);
 
         			var options = {
-          			title: '',
+          			title: 'Messages Sent and Recieved',
           			vAxis: {title: '',  titleTextStyle: {color: 'blue'},
-
           			}
         			};
 
@@ -164,15 +163,15 @@
       			function drawChart() {
         		var data = google.visualization.arrayToDataTable([
           			['Top Groups', '# of Messages'],
-          			[group1,     top_groups[0].messages.count],
-          			[group2,      top_groups[1].messages.count],
-          			[group3,  top_groups[2].messages.count],
+          			[group1, top_groups[0].messages.count],
+          			[group2, top_groups[1].messages.count],
+          			[group3, top_groups[2].messages.count],
           			[group4, top_groups[3].messages.count],
-          			[other,    top_groups[4].messages.count]
+          			[other,  top_groups[4].messages.count]
         			]);
 
         		var options = {
-          			title: '',
+          			title: 'Most Active Group Chats by number of Messages',
           			pieHole: 0.4,
           			chartArea:{width:'80%',height:'80%'},
           			slices: {  
@@ -185,6 +184,8 @@
                   		5: { color: '#6633CC' },
                   		6: { color: '#589AFF' },
                   	},
+                  	
+                  	
         		};
 
         		var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
@@ -208,7 +209,7 @@
 		<div id ="friends"></div>
 		<div id ="lazy"></div>
 		<div id ="friend" ng-controller ="F1">
-			<div id ="hpic"></div>
+			<div id ="hpic" ></div>
 			<div id ="Name">{{name}}</div>
 			<div id ="messcount">{{nummess}} Messages</div>
 		</div>
