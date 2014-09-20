@@ -1,3 +1,7 @@
+var x = getParameterByName(access_token); 
+console.log(x); 
+
+
 
 var top_ten = getTopTen();
 var top_friends = getTopFriends();
