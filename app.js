@@ -1,5 +1,7 @@
 
 var top_ten = getTopTen();
+
+  
 //var top_groups = getTopTenGroups();
 //console.log(top_ten);
 var app = angular.module('stats', []);

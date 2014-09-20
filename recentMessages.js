@@ -1,10 +1,10 @@
+
 function getTopTen(){
 	var gmurl = "https://api.groupme.com/v3/";
 	var token = "?token=bcb9df401b470132915c464450d26530";
-	var allGroups = [];
 	var allMesseges = [];
 	var finalMess = [];
-	var finalGroup = [];
+	var allGroups = [];
 	var req = new XMLHttpRequest();
 	req.open('GET', gmurl+"groups"+token, false);
 	req.send(null);
@@ -43,6 +43,7 @@ function getTopTen(){
 	}
 	return finalMess; 
 };
+
 /*
 function getTopTenGroups(){
 	var gmurl = "https://api.groupme.com/v3/";
