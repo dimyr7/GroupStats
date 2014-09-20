@@ -1,6 +1,6 @@
 function getTopGroups(){
 	var gmurl = "https://api.groupme.com/v3/";
-	var token = "?token=bcb9df401b470132915c464450d26530";
+	var token = "?token="+getParameterByName("access_token");
 	var topGroups = [];
 	var req = new XMLHttpRequest();
 	req.open('GET', gmurl+"groups"+token+"&per_page=50", false);
@@ -14,13 +14,16 @@ function getTopGroups(){
 	topGroups.sort(function(a,b){
 		return b.messages.count-a.messages.count;
 	});
-	return topGroups;
-	/*for(var i = 0; i < 5; i++){
-		console.log(topGroups[i].messages.count);
-	}*/
-	//console.log($.urlParam(token));
-};
 
+	//console.log(getParameterByName('token'));
+	return topGroups;
+};
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+};
 
 /*
 $.urlParam = function(name){

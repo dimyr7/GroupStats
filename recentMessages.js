@@ -1,7 +1,7 @@
 
 function getTopTen(){
 	var gmurl = "https://api.groupme.com/v3/";
-	var token = "?token=bcb9df401b470132915c464450d26530";
+	var token = "?token="+getParameterByName("access_token");
 	var allMesseges = [];
 	var finalMess = [];
 	var allGroups = [];
@@ -43,7 +43,12 @@ function getTopTen(){
 	}
 	return finalMess; 
 };
-
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+};
 /*
 function getTopTenGroups(){
 	var gmurl = "https://api.groupme.com/v3/";
