@@ -6,7 +6,7 @@
 
 	<link rel="stylesheet" type="text/css" href="vint.css">
   <script src="jquery-2.1.1.js"></script>
-  <script type="text/javascript" src="animate.js"></script>
+  <script type="text/javascript" src=""></script>
 	<script type="text/javascript" src="recentMessages.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js"></script>
 	<script src="app.js"></script>
@@ -73,7 +73,7 @@
         			]);
 
         			var options = {
-          			title: 'Messages Sent and Recieved',
+          			title: '',
           			
           			vAxis: {title: '',  titleTextStyle: {color: 'blue'}}
         			};
@@ -85,6 +85,7 @@
     				</script>
   				</head>
   				<body>
+            <h1 id ="bartitle">Messages Sent and Recieved</h1>
     				<div id="chart_div" style="width: 792px; height: 300px;"></div>
   				</body>
 			</html>
@@ -118,8 +119,7 @@
 
         		var options = {
           			title: 'Most Active Group Chats by number of Messages',
-          			titleTextStyle: { color: blue,
-                  fontSize: 18px},
+          			
           			pieHole: 0.4,
           			chartArea:{width:'80%',height:'80%'},
           			slices: {  
