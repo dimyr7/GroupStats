@@ -52,10 +52,13 @@ function getTopTen(){
 		if(req.status==200){
 			var s = JSON.parse(req.responseText);
 			for(var j = 0; j < s.response.messages.length; j++){
+				if(s.response.messages[j].text == undefined){
+					continue;
+				}
 				if(me.id!=s.response.messages[j].user_id){
-				allMesseges.push(s.response.messages[j]);
-			}
-				
+					allMesseges.push(s.response.messages[j]);
+				}
+
 			}
 		}
 	}
