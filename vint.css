@@ -29,7 +29,7 @@
 	height: 39px;
 	width: 39px;
 	margin-top: 8px;
-	background:url(https://i.groupme.com/180x248.jpeg.43da72809e780131792522000ae7065f) 0 0 no-repeat;
+	/*background:url({{pro}}) 0 0 no-repeat;*/
 	background-position: center center;
 	background-size:contain;
 	display: inline-block;
