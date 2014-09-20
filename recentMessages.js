@@ -111,9 +111,11 @@ function getTopFriends(){
 			//console.log(allMesseges[j].user_id);
 			if(array[i].id==allMesseges[j].user_id){
 				array[i].id=allMesseges[j].name;
+				array[i].pic=allMesseges[j].avatar_url;
 				break;
 			}
 		}
 	}
+	console.log(array);
 	return array;
 }
