@@ -1,4 +1,23 @@
 
+function getTopGroups(){
+	var gmurl = "https://api.groupme.com/v3/";
+	var token = "?token="+getParameterByName("access_token");
+	var topGroups = [];
+	var req = new XMLHttpRequest();
+	req.open('GET', gmurl+"groups"+token+"&per_page=50", false);
+	req.send(null);
+	if(req.status==200){
+		var s = JSON.parse(req.responseText);
+		for(var i = 0; i < s.response.length; i++){
+			topGroups.push(s.response[i]);
+		}
+		
+	}
+	topGroups.sort(function(a,b){
+		return b.messages.count-a.messages.count;
+	});
+	return topGroups;
+};
 function getMyInfo(){
 	var gmurl = "https://api.groupme.com/v3/";
 	var token = "?token="+getParameterByName("access_token");
@@ -27,9 +46,6 @@ function getTopTen(){
 		}
 		
 	}
-	/*for(var i =0; i <allGroups.length; i++){
-		console.log(allGroups[i]);
-	}*/
 	for(var i = 0; i < allGroups.length; i++){
 		req.open('GET', gmurl+'groups/'+allGroups[i]+'/messages'+token, false);
 		req.send(null);
@@ -37,27 +53,17 @@ function getTopTen(){
 			var s = JSON.parse(req.responseText);
 			for(var j = 0; j < s.response.messages.length; j++){
 				if(me.id!=s.response.messages[j].user_id){
-				console.log(s.response.messages[j].name)
-				console.log(me.id);
-				console.log(s.response.messages[j].user_id);
 				allMesseges.push(s.response.messages[j]);
 			}
 				
 			}
-			//console.log("good");
 		}
 	}
 	allMesseges.sort(function(a,b){
 		return b.created_at-a.created_at;
 	});
-	for(var i = 0; i < allMesseges.length; i++){
-		//console.log(allMesseges[i].text + (new Date(allMesseges[i].created_at*1000)));
-	}
 	for(var i = 0; i < 10; i++){
 		finalMess[i]=allMesseges[i];
-	}
-	for(var i = 0; i < finalMess.length; i++){
-		//console.log(finalGroup[i]);
 	}
 	return finalMess; 
 };
@@ -69,33 +75,35 @@ function getParameterByName(name) {
 };
 
 function getTopFriends(){
-
-}
-
-/*
-function getTopTenGroups(){
 	var gmurl = "https://api.groupme.com/v3/";
-	var token = "?token=bcb9df401b470132915c464450d26530";
-	var mess = getTopTen();
-	var allGroups = [];
-	
-	for(var i = 2; i < 3; i++){
-		var req = new XMLHttpRequest();
-		console.log("ID:"+mess[i].group_id);
-		req.open('GET', gmurl+'groups/'+token+'&id='+mess[i].group_id , false);
+	var token = "?token="+getParameterByName("access_token");
+	var allMesseges = [];
+	var me = getMyInfo();
+	var req = new XMLHttpRequest();
+	var topGroups = getTopGroups();
+	var counter = {};
+	for(var i = 0; i < 5; i++){
+		req.open('GET',gmurl+"groups/"+topGroups[i].id+"/messages"+token+"&limit=100", false);
 		req.send(null);
 		if(req.status==200){
-			//console.log("good");
-
-			var s =JSON.parse(req.responseText);
-			console.log(mess[i].group_id + mess[i].text);
-			console.log(JSON.stringify(s));
-			//console.log(s.response.name);
-			allGroups.push(s.response.created_at);
-		}		
+			var s = JSON.parse(req.responseText);
+			for(var j = 0; j < s.response.messages.length; j++){
+				allMesseges.push(s.response.messages[j])
+				if(counter[s.response.messages[j].user_id] == undefined){
+					counter[s.response.messages[j].user_id]=0;
+				}
+				counter[s.response.messages[j].user_id]++;
+			}
+		} 
 	}
-	for(var i = 0; i < 10; i++){
-		//console.log((new Date(allGroups[i])*1000));
-	}
-
-};*/
+	var array = [];
+	$.each(counter, function(index,value){
+		array.push({id:index, c: value});
+	});
+	
+	array.sort(function(a,b){
+		return b.c-a.c;
+	});
+	console.log(array);
+			
+}
