@@ -1,5 +1,6 @@
 
 var top_ten = getTopTen();
+getTopFriends();
 var app = angular.module('stats', []);
 var me = getMyInfo();
 app.controller('user', ['$scope', function($scope) {
