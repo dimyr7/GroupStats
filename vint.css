@@ -20,7 +20,8 @@
 	font-family: Helvetica, sans-serif; 
 	font-size: 18px;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 5px;
+	padding-top: 8px;
 }
 #Recent{
 
@@ -55,16 +56,18 @@
 	text-decoration: none;
 	color: #888888; 
 	font-family: Helvetica, sans-serif; 
-	font-size: 12px;
+	font-size: 15px;
 	margin-left: 50px;
+	margin-top: -10px;
 }
 #User{
 
 	text-decoration: none;
 	color: #888888; 
 	font-family: Helvetica, sans-serif; 
-	font-size: 15px;
+	font-size: 14px;
 	margin-left: 60px;
+	margin-top: -5px;
 }
 #logo{
 	height: 60px;
