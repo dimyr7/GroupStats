@@ -6,8 +6,10 @@
 
 	<link rel="stylesheet" type="text/css" href="vint.css">
 
-	<title> GroupStats - Home </title>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<script src="jquery-2.1.1.js"></script>
+	<script type="text/javascript" src=""></script>
+	<title> GroupStats </title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 </head>
@@ -23,22 +25,22 @@
 		<div id ="lazyborder"></div>
 		<div id ="mess">
 			<div id ="gpic"></div>
-			<h1 id ="text">"Hi"</h1>
+			<h1 id ="text">"Hi I am typing for fun. LOL"</h1>
 			<h2 id ="User">-Ben</h3>
 			<h3 id ="Group">LakeHouse</h2>
 			
 		</div>
 		<div id ="mess">
 			<div id ="gpic"></div>
-			<h1 id ="text">"Hi"</h1>
-			<h2 id ="User">-Ben</h3>
+			<h1 id ="text">"Hi, EAT SHIT BITCH"</h1>
+			<h2 id ="User">-Bill</h3>
 			<h3 id ="Group">LakeHouse</h2>
 			
 		</div>
 		<div id ="mess">
 			<div id ="gpic"></div>
-			<h1 id ="text">"Hi"</h1>
-			<h2 id ="User">-Ben</h3>
+			<h1 id ="text">"Hi, weird sex things..."</h1>
+			<h2 id ="User">-Dima</h3>
 			<h3 id ="Group">LakeHouse</h2>
 			
 		</div>
@@ -53,37 +55,37 @@
 	
 		<div id ="topc">
 			<html>
- 			 <head>
-    		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    		<script type="text/javascript">
-      		google.load("visualization", "1", {packages:["corechart"]});
-      		google.setOnLoadCallback(drawChart);
-      		function drawChart() {
-        	var data = google.visualization.arrayToDataTable([
-          		['Day', 'Sent', 'Recieved'],
-          		['Today',  	   		2000,400],
-          		['Yesterday',  		600,460],
-          		['9/17', 			660,400],
-          		['9/16',  			1030,540],
-          		['9/15',  			143,      300]
-        	]);
+ 				 <head>
+    				<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    				<script type="text/javascript">
+      				google.load("visualization", "1", {packages:["corechart"]});
+      				google.setOnLoadCallback(drawChart);
+      				function drawChart() {
+        			var data = google.visualization.arrayToDataTable([
+          				['Day', 'Sent', 'Recieved'],
+          				['Today',  	   		2000,400],
+          				['Yesterday',  		600,460],
+          				['9/17', 			660,400],
+          				['9/16',  			1030,540],
+          				['9/15',  			143,      300]
+        			]);
 
-        	var options = {
-          	title: '',
-          	vAxis: {title: '',  titleTextStyle: {color: 'blue'},
+        			var options = {
+          			title: '',
+          			vAxis: {title: '',  titleTextStyle: {color: 'blue'},
 
-          	}
-        	};
+          			}
+        			};
 
-        	var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        			var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
 
-        	chart.draw(data, options);
-      		}
-    		</script>
-  			</head>
-  			<body>
-    		<div id="chart_div" style="width: 792px; height: 300px;"></div>
-  			</body>
+        			chart.draw(data, options);
+      				}
+    				</script>
+  				</head>
+  				<body>
+    				<div id="chart_div" style="width: 792px; height: 300px;"></div>
+  				</body>
 			</html>
 		</div>
 
@@ -92,50 +94,50 @@
 
 		<div id ="bottomc">
 			<html>
- 			<head>
-    		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-   			<script type="text/javascript">
-      		google.load("visualization", "1", {packages:["corechart"]});
-     		google.setOnLoadCallback(drawChart);
-     		var group1 = 'Group1';
-     		var group2 = 'Group2';
-     		var group3 = 'Group3';
-     		var group4 = 'Group4';
-     		var other = 'Other';
-      		function drawChart() {
-        	var data = google.visualization.arrayToDataTable([
-          		['Top Groups', '# of Messages'],
-          		[group1,     100],
-          		[group2,      55],
-          		[group3,  45],
-          		[group4, 34],
-          		[other,    20]
-        		]);
+ 				<head>
+    			<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+   				<script type="text/javascript">
+      			google.load("visualization", "1", {packages:["corechart"]});
+     			google.setOnLoadCallback(drawChart);
+     			var group1 = 'Group1';
+     			var group2 = 'Group2';
+     			var group3 = 'Group3';
+     			var group4 = 'Group4';
+     			var other = 'Other';
+      			function drawChart() {
+        		var data = google.visualization.arrayToDataTable([
+          			['Top Groups', '# of Messages'],
+          			[group1,     100],
+          			[group2,      55],
+          			[group3,  45],
+          			[group4, 34],
+          			[other,    20]
+        			]);
 
-        	var options = {
-          		title: '',
-          		pieHole: 0.6,
-          		chartArea:{width:'80%',height:'80%'},
-          		slices: {  
-                  	0: { color: '#0066FF' },
-                  	0: { offset: 0.0 },
-                  	1: { color: '#78ADFF' },
-                  	2: { color: '#1975FF' },
-                  	3: { color: '#69A4FF' },
-                  	4: { color: '#3083FF' },
-                  	5: { color: '#458FFF' },
-                  	6: { color: '#589AFF' },
-                  },
+        		var options = {
+          			title: '',
+          			pieHole: 0.4,
+          			chartArea:{width:'80%',height:'80%'},
+          			slices: {  
+                  		0: { color: '#0066FF' },
+                  		0: { offset: 0.0 },
+                  		1: { color: '#78ADFF' },
+                  		2: { color: '#1975FF' },
+                  		3: { color: '#69A4FF' },
+                  		4: { color: '#3083FF' },
+                  		5: { color: '#458FFF' },
+                  		6: { color: '#589AFF' },
+                  	},
         		};
 
         		var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         		chart.draw(data, options);
       			}
-    		</script>
-  			</head>
-  			<body>
-    		<div id="donutchart" style="width: 792px; height: 400px;"></div>
-  			</body>
+    			</script>
+  				</head>
+  				<body>
+    			<div id="donutchart" style="width: 792px; height: 400px;"></div>
+  				</body>
 			</html>
 
 		</div>
@@ -146,6 +148,33 @@
 	</div>
 
 	<div id ="right">
+		<div id ="friends"></div>
+		<div id ="lazy"></div>
+		<div id ="friend">
+			<div id ="hpic"></div>
+			<div id ="Name">White Nick</div>
+			<div id ="messcount">32,001 Messages</div>
+		</div>
+		<div id ="friend">
+			<div id ="hpic"></div>
+			<div id ="Name">Nick W</div>
+			<div id ="messcount">4,500 Message</div>
+		</div>
+		<div id ="friend">
+			<div id ="hpic"></div>
+			<div id ="Name">Nicky</div>
+			<div id ="messcount">2,000 Messages</div>
+		</div>
+		<div id ="friend">
+			<div id ="hpic"></div>
+			<div id ="Name">Nicolas</div>
+			<div id ="messcount">987 Messages</div>
+		</div>
+		<div id ="friend">
+			<div id ="hpic"></div>
+			<div id ="Name">NIck Nick</div>
+			<div id ="messcount">2 Messages</div>
+		</div>
 	</div>
 
 

@@ -2,16 +2,14 @@
 	width:1400px; 
 	margin:0 auto;
 	background:#222222;
-	position: relative;
-}
+	position: relative;}
 
 #trim {
 	height: 55px; 
 	top: 0;
 	width:100%;
 	background:#222222;
-	position: relative;
-}
+	position: relative;}
 
 #text{
 
@@ -20,10 +18,10 @@
 	font-family: Helvetica, sans-serif; 
 	font-size: 18px;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 5px;
+	padding-top: 8px;
 }
 #Recent{
-
 	height: 40px;
 	width: 300px;
 	background:url(3.png) 0 0 no-repeat;
@@ -55,16 +53,18 @@
 	text-decoration: none;
 	color: #888888; 
 	font-family: Helvetica, sans-serif; 
-	font-size: 12px;
+	font-size: 15px;
 	margin-left: 50px;
+	margin-top: -10px;
 }
 #User{
 
 	text-decoration: none;
 	color: #888888; 
 	font-family: Helvetica, sans-serif; 
-	font-size: 15px;
+	font-size: 14px;
 	margin-left: 60px;
+	margin-top: -5px;
 }
 #logo{
 	height: 60px;
@@ -100,7 +100,7 @@
 #topc {
 
 	height:300px;
-	background:#334433;
+	;
 }
 
 #right {
@@ -110,4 +110,60 @@
 	background:#3c4246;
 	display: inline-block;
 
+}
+
+#friends{
+	height: 40px;
+	width: 300px;
+	background:url(4.png) 0 0 no-repeat;
+	margin-top: 5px;
+	margin-left: 20px;
+	
+}
+
+#lazy{
+	height: 1px;
+	width: 300px;
+	background-color: #111111;
+}
+
+#friend{
+	height: 80px; 
+	width: 300px;
+	background:#3c4246;
+}
+
+#friend:hover{
+	background: #66CCFF;
+}
+
+#hpic{
+	margin-top: 10px;
+	border-radius: 8px;
+	height: 60px;
+	width: 60px;
+	margin-left: 10px; 
+	background-size: contain;
+	background:url(https://i.groupme.com/1280x1280.jpeg.994974e0a5c0013158ce22000b208f7b) 0 0 no-repeat;
+	float: left;
+	background-position: center center;
+	background-size:contain;
+}
+#Name{
+
+	text-decoration: none;
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 20px;
+	margin-left: 80px;
+	margin-top: 5px;
+	padding-top: 20px;
+}
+#messcount{
+	text-decoration: none;
+	color: #888888; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 13px;
+	margin-left: 80px;
+	margin-top: 0px;
 }
