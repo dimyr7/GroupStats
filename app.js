@@ -1,6 +1,6 @@
 
 var top_ten = getTopTen();
-//getTopFriends();
+var top_friends = getTopFriends();
 var app = angular.module('stats', []);
 var me = getMyInfo();
 
@@ -16,6 +16,15 @@ app.controller('left', function($scope) {
         $scope.messages[i].name = top_ten[i].name;
         $scope.messages[i].group = (new Date(top_ten[i].created_at*1000).toString().substring(0,24)); 
     }
+});
+
+app.controller('right',function($scope) {
+  $scope.friends = [];
+  for(var i = 0; i < top_friends.length && i < 8; ++i){
+       $scope.friends[i] = {};
+       $scope.friends[i].c = top_friends[i].c;
+       $scope.friends[i].id = top_friends[i].id; 
+  }
 });
 
 app.controller('F1', ['$scope', function($scope) {
