@@ -150,10 +150,18 @@
 
 	</div>
 
-	<div id ="right">
+	<div id ="right" ng-controller="right">
 		<div id ="friends"></div>
 		<div id ="lazy"></div>
-		<div id ="friend" ng-controller ="F1">
+		<div ng-repeat="friend in friends">
+        <div id="friend">
+            <div id="hpic"></div>
+            <div id ="Name">{{friend.text}}</div>
+            <div id ="messcount">{{friend.name}}</div>
+        </div>
+    	</div>
+		
+		<!--<div id ="friend" ng-controller ="F1">
 			<div id ="hpic" ></div>
 			<div id ="Name">{{name}}</div>
 			<div id ="messcount">{{nummess}} Messages</div>
@@ -192,7 +200,7 @@
 			<div id ="hpic"></div>
 			<div id ="Name">{{name}}</div>
 			<div id ="messcount">{{nummess}} Messages</div>
-		</div>
+		</div>-->
 	</div>
 
 

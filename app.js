@@ -24,10 +24,12 @@ app.controller('right',function($scope) {
        $scope.friends[i] = {};
        $scope.friends[i].c = top_friends[i].c;
        $scope.friends[i].id = top_friends[i].id; 
+       $scope.friends[i].pic = top_friends[i].pic; 
+
   }
 });
 
-app.controller('F1', ['$scope', function($scope) {
+/*app.controller('F1', ['$scope', function($scope) {
   $scope.name = 'White Nick';
   $scope.nummess = '32,000';
   $scope.hpic = 'https://i.groupme.com/1280x1280.jpeg.994974e0a5c0013158ce22000b208f7b'; 
@@ -67,5 +69,5 @@ app.controller('F8', ['$scope', function($scope) {
   $scope.nummess = '32,000';
   $scope.hpic = 'Lakehouse'; 
 }]);
-
+*/
 
