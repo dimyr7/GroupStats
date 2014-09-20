@@ -104,6 +104,16 @@ function getTopFriends(){
 	array.sort(function(a,b){
 		return b.c-a.c;
 	});
-	console.log(array);
-			
+	//console.log(allMesseges.length);
+	for(var i = 0; i < array.length; i++){
+		for(var j = 0; j < allMesseges.length; j++){
+			//console.log(array);
+			//console.log(allMesseges[j].user_id);
+			if(array[i].id==allMesseges[j].user_id){
+				array[i].id=allMesseges[j].name;
+				break;
+			}
+		}
+	}
+	return array;
 }
