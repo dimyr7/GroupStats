@@ -10,6 +10,40 @@
 	width:100%;
 	background:#222222;
 	position: relative;}
+#logo{
+	height: 55px;
+	left: 100px;
+	width: 200px;
+	position: absolute;
+	background:url(1.png) 0 0 no-repeat;
+
+}
+#account{
+	height: 55px;
+	width:300px;
+	float:right;
+	margin-right: 0px;
+}
+
+#propic{
+	height: 39px;
+	width: 39px;
+	margin-top: 8px;
+	background:url(https://i.groupme.com/180x248.jpeg.43da72809e780131792522000ae7065f) 0 0 no-repeat;
+	background-position: center center;
+	background-size:contain;
+	display: inline-block;
+}
+
+#username{
+	display: inline-block;
+
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 18px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	}
 
 #text{
 
@@ -18,7 +52,7 @@
 	font-family: Helvetica, sans-serif; 
 	font-size: 18px;
 	margin-left: 20px;
-	margin-top: 5px;
+	margin-top: 2px;
 	padding-top: 8px;
 }
 #Recent{
@@ -34,7 +68,7 @@
 	background-color: #111111;
 }
 #mess{
-	height: 80px; 
+	height: 70px; 
 	width: 300px;
 	background:#3c4246;
 }
@@ -64,17 +98,9 @@
 	font-family: Helvetica, sans-serif; 
 	font-size: 14px;
 	margin-left: 60px;
-	margin-top: -5px;
+	margin-top: -10px;
 }
-#logo{
-	height: 60px;
-	left: 100px;
-	width: 200px;
-	position: absolute;
-	
-	background:url(1.png) 0 0 no-repeat;
 
-}
 
 #left {
 	width: 300px; 
