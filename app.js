@@ -7,46 +7,46 @@ app.controller('user', ['$scope', function($scope) {
 }]);
 app.controller('M1', ['$scope', function($scope) {
   $scope.text = top_ten[0].text;
-  $scope.name = 'Ben';
+  $scope.name = top_ten[0].name;
   $scope.group = 'Lakehouse'; 
 }]);
 app.controller('M2', ['$scope', function($scope) {
-  $scope.text = 'Hi, EAT SHIT BITCH';
+  $scope.text = top_ten[1].text;
   $scope.name = 'Bill';
   $scope.group = '4TS'; 
 }]);
 app.controller('M3', ['$scope', function($scope) {
-  $scope.text = "Hi, weird sex things...";
+  $scope.text = top_ten[2].text;
   $scope.name = 'Dima';
   $scope.group = 'Lakehouse'; 
 }]);
 app.controller('M4', ['$scope', function($scope) {
-  $scope.text = "Poop...Poop...poop";
+  $scope.text = top_ten[3].text;
   $scope.name = 'Nate';
   $scope.group = 'Right Now'; 
 }]);
 app.controller('M5', ['$scope', function($scope) {
-  $scope.text = "WTF, Guys what even?";
+  $scope.text = top_ten[4].text;
   $scope.name = 'Jordyn';
   $scope.group = 'Fucked Up'; 
 }]);
 app.controller('M6', ['$scope', function($scope) {
-  $scope.text = "I DONT KNOW ANYMORE";
+  $scope.text = top_ten[5].text;
   $scope.name = 'Ellie';
   $scope.group = 'The OGs'; 
 }]);
 app.controller('M7', ['$scope', function($scope) {
-  $scope.text = "...it is 5:55am";
+  $scope.text = top_ten[6].text;
   $scope.name = 'Ben';
   $scope.group = 'Hackathon'; 
 }]);
 app.controller('M8', ['$scope', function($scope) {
-  $scope.text = "Now it is 6am :(";
+  $scope.text = top_ten[7].text;
   $scope.name = 'Doug';
   $scope.group = 'Who is Doug'; 
 }]);
 app.controller('M9', ['$scope', function($scope) {
-  $scope.text = "GOOD MORNING";
+  $scope.text = top_ten[8].text;
   $scope.name = 'Fuck';
   $scope.group = 'nosleep'; 
 }]);
