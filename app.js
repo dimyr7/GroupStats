@@ -6,7 +6,7 @@ app.controller('user', ['$scope', function($scope) {
   $scope.username = 'btmoore95';
 }]);
 app.controller('M1', ['$scope', function($scope) {
-  $scope.text = 'Hi I am typing for fun. LOL';
+  $scope.text = top_ten[0].text;
   $scope.name = 'Ben';
   $scope.group = 'Lakehouse'; 
 }]);
