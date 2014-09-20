@@ -12,7 +12,7 @@ app.controller('left', function($scope) {
     $scope.messages = [];
     for(var i = 0; i < top_ten.length && i < 9; ++i){
         $scope.messages[i] = {};
-        $scope.messages[i].text = top_ten[i].text.length > 20 ? top_ten[i].text.substring(0,22)+"..." : top_ten[i].text;
+        $scope.messages[i].text = top_ten[i].text.length > 20 ? top_ten[i].text.substring(0,20)+"..." : top_ten[i].text;
         $scope.messages[i].name = top_ten[i].name;
         $scope.messages[i].group = (new Date(top_ten[i].created_at*1000).toString().substring(0,24)); 
     }
