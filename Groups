@@ -1,0 +1,135 @@
+{"response":
+	[
+		{
+		"id":"7941682",
+		"group_id":"7941682",
+		"name":"Lakehouse",
+		"phone_number":"+1 9082928121",
+		"type":"private",
+		"description":"",
+		"image_url":"https://i.groupme.com/640x640.jpeg.73f19fc0dbc40131a42422000b2204cd",
+		"creator_user_id":"17836849",
+		"created_at":1397446034,
+		"updated_at":1411171194,
+		"office_mode":false,
+		"share_url":null,
+		"members":	
+			[
+			
+				{
+				"user_id":"15616109",
+				"nickname":"Bill Pendavinji",
+				"image_url":"https://i.groupme.com/1280x1280.jpeg.994974e0a5c0013158ce22000b208f7b",
+				"id":"43209409",
+				"muted":false,
+				"autokicked":false
+				},
+	
+				{
+				"user_id":"17836849",
+				"nickname":"Ben Moore","
+				image_url":"https://i.groupme.com/180x248.jpeg.43da72809e780131792522000ae7065f",
+				"id":"43209295",
+				"muted":false,
+				"autokicked":false
+				},
+
+				{
+				"user_id":"17837577",
+				"nickname":"Uncle Tyler",
+				"image_url":"https://i.groupme.com/1280x1280.jpeg.9f8030b0a5c5013162ae22000ae7065f",
+				"id":"43209416",
+				"muted":false,
+				"autokicked":false
+				},
+			],
+
+		"messages":
+			{
+			"count":1526,
+			"last_message_id":"141117119480192994",
+			"last_message_created_at":1411171194,"
+			preview":
+				{
+				"nickname":"Nick Wodrich",
+				"text":"I'll just hack everything",
+				"image_url":"https://i.groupme.com/1280x1280.jpeg.4005c020a17c01317de322000a668db8",
+				"attachments":[]
+				}
+			},
+		"max_members":50
+		},
+		{
+		"id":"8707446",
+		"group_id":"8707446",
+		"name":"Fucked Up",
+		"phone_number":"+1 8316879753",
+		"type":"private",
+		"description":"",
+		"image_url":"https://i.groupme.com/1632x1224.jpeg.498c2ac0dbc0013121f822000a658c96",
+		"creator_user_id":"17837578",
+		"created_at":1402718868,
+		"updated_at":1411070720,
+		"office_mode":false,
+		"share_url":null,
+		"members":
+			[
+				{
+				"user_id":"17837578",
+				"nickname":"Jordyn",
+				"image_url":"https://i.groupme.com/1280x1280.jpeg.6c7b5ca0a7420131792722000ae7065f",
+				"id":"48304715",
+				"muted":false,
+				"autokicked":false
+				},
+				{
+				"user_id":"14058243",
+				"nickname":"Ashley Gonzaléz",
+				"image_url":"http://i.groupme.com/1280x1280.jpeg.cf94ea5a95ef41248038f79a6b5b8e5e",
+				"id":"48304818",
+				"muted":false,
+				"autokicked":false
+				},
+				{
+				"user_id":"10366224",
+				"nickname":"Nick Adler",
+				"image_url":"https://i.groupme.com/1280x1280.jpeg.fad3d170c5f0013121f322000a658c96",
+				"id":"48304809",
+				"muted":false,
+				"autokicked":false},
+				{"user_id":"13199374",
+				"nickname":"Mizan Rahman",
+				"image_url":"https://i.groupme.com/180x239.jpeg.275b64d0a03d013176e422000b340376",
+				"id":"48304827",
+				"muted":false,
+				"autokicked":false},
+				{
+				"user_id":"14521334",
+				"nickname":"Ellie Rosario",
+				"image_url":"https://i.groupme.com/1280x1280.jpeg.ec016230d231013162b622000ae7065f",
+				"id":"48304791",
+				"muted":false,
+				"autokicked":false
+				},
+			],
+		"messages":
+			{
+			"count":347,
+			"last_message_id":"141107072045852300",
+			"last_message_created_at":1411070720,
+			"preview":
+				{
+				"nickname":"Mizan Rahman",
+				"text":"Lolll and if u throw them in the air they automatically shoot away at Mach 3",
+				"image_url":"https://i.groupme.com/180x239.jpeg.275b64d0a03d013176e422000b340376",
+				"attachments":[]
+				}
+			},
+		"max_members":50
+		},
+	],
+	"meta":
+		{
+		"code":200
+		}
+}
