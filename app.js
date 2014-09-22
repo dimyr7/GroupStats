@@ -7,7 +7,6 @@ if (x == ""){
   var top_friends = getTopFriends();
   var app = angular.module('stats', []);
   var me = getMyInfo();
-setTimeout(function(){
 app.controller('user', function($scope) {
     $scope.username = me.name;
     $scope.propic_image = me.image_url;
@@ -32,5 +31,3 @@ app.controller('right',function($scope) {
 
   }
 });
-
-} ,1000);
