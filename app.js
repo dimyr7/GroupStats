@@ -2,13 +2,12 @@ var x = getParameterByName("access_token");
 if (x == ""){
   window.location="https://oauth.groupme.com/oauth/authorize?client_id=HvgtfdoiyqVpz9fuHrBGrnb0vCmw0VXnMkXL1cG91NtoETFf";
 }
-setTimeout(function(){
   var t = getSR();
   var top_ten = getTopTen();
   var top_friends = getTopFriends();
   var app = angular.module('stats', []);
   var me = getMyInfo();
-} ,1000);
+setTimeout(function(){
 app.controller('user', function($scope) {
     $scope.username = me.name;
     $scope.propic_image = me.image_url;
@@ -34,4 +33,4 @@ app.controller('right',function($scope) {
   }
 });
 
-
+} ,1000);
