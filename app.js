@@ -9,7 +9,6 @@ var top_friends = getTopFriends();
 var app = angular.module('stats', []);
 var me = getMyInfo();
 } ,1000);
-;
 app.controller('user', function($scope) {
     $scope.username = me.name;
     $scope.propic_image = me.image_url;
