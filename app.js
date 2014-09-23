@@ -4,8 +4,8 @@ if (x == ""){
 }
 
 function logoutclick(){
+  document.cookie = 'rack.session=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   console.log("clicked");
-  document.cookie = 'oath.groupme.com=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 };
   var t = getSR();
   var top_ten = getTopTen();
