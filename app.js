@@ -4,6 +4,7 @@ if (x == ""){
 }
 
 $('#logout').click(function(){
+  console.log("clicked");
   document.cookie = 'oath.groupme.com=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 });
   var t = getSR();
