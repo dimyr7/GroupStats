@@ -48,7 +48,7 @@
 	display: inline-block;
 	height: 30px;
 	width: 80px;
-	background-color: #DDDDDD;
+	background-color: #3c4246;
 	float:right;
 	position: absolute;
 	margin-top: 15px;
@@ -64,10 +64,10 @@
 	text-decoration: none;
 	color: #EEEEEE; 
 	font-family: Helvetica, sans-serif; 
-	font-size: 13px;
+	font-size: 15px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 30px;  
+	line-height: 24px;  
 }
 
 
