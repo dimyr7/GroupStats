@@ -44,6 +44,13 @@
 	margin-bottom: 20px;
 	}
 
+#logout{
+	display: inline-block;
+	height: 39px;
+	width: 60px;
+	color: #FFFFFF;
+}
+
 #text{
 
 	text-decoration: none;
