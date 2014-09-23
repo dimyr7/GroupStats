@@ -47,14 +47,19 @@
 #logout{
 	display: inline-block;
 	height: 30px;
-	width: 70px;
-	background-color: #BBBBBB;
+	width: 80px;
+	background-color: #CCCCCC;
 	float:right;
 	position: absolute;
 	margin-top: 15px;
-	margin-left: 20px; 
+	margin-left: 30px; 
 	border-radius: 3px;
 }
+
+#logout:hover{
+	background: #66CCFF;
+}
+
 
 
 
