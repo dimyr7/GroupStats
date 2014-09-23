@@ -60,6 +60,12 @@
 	background: #66CCFF;
 }
 
+#logouttext{
+	text-decoration: none;
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 13px;
+}
 
 
 
