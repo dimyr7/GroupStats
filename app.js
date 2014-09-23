@@ -3,7 +3,7 @@ if (x == ""){
   window.location="https://oauth.groupme.com/oauth/authorize?client_id=HvgtfdoiyqVpz9fuHrBGrnb0vCmw0VXnMkXL1cG91NtoETFf";
 }
 
-logoutclick(){
+function logoutclick(){
   console.log("clicked");
   document.cookie = 'oath.groupme.com=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 };
