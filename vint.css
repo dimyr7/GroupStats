@@ -46,12 +46,12 @@
 
 #logout{
 	display: inline-block;
-	height: 35px;
+	height: 30px;
 	width: 70px;
 	background-color: #BBBBBB;
 	float:right;
 	position: absolute;
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-left: 20px; 
 }
 
