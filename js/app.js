@@ -7,11 +7,11 @@ function logoutclick(){
   document.cookie = 'rack.session=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   console.log("clicked");
 };
-  var t = getSR();
-  var top_ten = getTopTen();
-  var top_friends = getTopFriends();
-  var app = angular.module('stats', []);
-  var me = getMyInfo();
+var t = getSR();
+var top_ten = getTopTen();
+var top_friends = getTopFriends();
+var app = angular.module('stats', []);
+var me = getMyInfo();
 app.controller('user', function($scope) {
     $scope.username = me.name;
     $scope.propic_image = me.image_url;
