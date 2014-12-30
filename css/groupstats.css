@@ -15,7 +15,7 @@
 	left: 100px;
 	width: 200px;
 	position: absolute;
-	background:url(1.png) 0 0 no-repeat;
+	background:url(/1.png) 0 0 no-repeat;
 
 }
 #account{
@@ -84,7 +84,7 @@
 #Recent{
 	height: 40px;
 	width: 300px;
-	background:url(3.png) 0 0 no-repeat;
+	background:url(/3.png) 0 0 no-repeat;
 	margin-left: 20px;	
 }
 #lazyborder
@@ -105,7 +105,7 @@
 	height: 50px;
 	width: 40px;
 	margin-left: 10px; 
-	background:url(1.png) 0 0 no-repeat;
+	background:url(/1.png) 0 0 no-repeat;
 	float: left;
 }
 
@@ -177,7 +177,7 @@
 #friends{
 	height: 40px;
 	width: 300px;
-	background:url(4.png) 0 0 no-repeat;
+	background:url(/4.png) 0 0 no-repeat;
 	margin-top: 5px;
 	margin-left: 20px;
 	
