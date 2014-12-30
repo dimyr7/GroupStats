@@ -1,0 +1,239 @@
+#content {
+	width:1400px; 
+	margin:0 auto;
+	background:#222222;
+	position: relative;}
+
+#trim {
+	height: 55px; 
+	top: 0;
+	width:100%;
+	background:#222222;
+	position: relative;}
+#logo{
+	height: 55px;
+	left: 100px;
+	width: 200px;
+	position: absolute;
+	background:url(1.png) 0 0 no-repeat;
+
+}
+#account{
+	height: 55px;
+	width:300px;
+	float:right;
+	margin-right: 0px;
+}
+
+#propic{
+	height: 39px;
+	width: 39px;
+	margin-top: 8px;
+	background-position: center center;
+	background-size:contain;
+	display: inline-block;
+}
+
+#username{
+	display: inline-block;
+
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 18px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	}
+
+#logout{
+	display: inline-block;
+	height: 30px;
+	width: 80px;
+	background-color: #3c4246;
+	float:right;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 30px; 
+	border-radius: 3px;
+}
+
+#logout:hover{
+	background: #66CCFF;
+}
+
+#logouttext{
+	text-decoration: none;
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+#text{
+
+	text-decoration: none;
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 18px;
+	margin-left: 17px;
+	margin-top: 2px;
+	padding-top: 8px;
+}
+#Recent{
+	height: 40px;
+	width: 300px;
+	background:url(3.png) 0 0 no-repeat;
+	margin-left: 20px;	
+}
+#lazyborder
+{
+	height: 1px;
+	width: 300px;
+	background-color: #111111;
+}
+#mess{
+	height: 70px; 
+	width: 300px;
+	background:#3c4246;
+}
+#mess:hover{
+	background: #66CCFF;
+}
+#gpic{
+	height: 50px;
+	width: 40px;
+	margin-left: 10px; 
+	background:url(1.png) 0 0 no-repeat;
+	float: left;
+}
+
+#Group{
+	text-decoration: none;
+	color: #888888; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 14px;
+	margin-left: 50px;
+	margin-top: -10px;
+}
+#User{
+
+	text-decoration: none;
+	color: #888888; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 14px;
+	margin-left: 60px;
+	margin-top: -10px;
+
+}
+
+
+#left {
+	width: 300px; 
+	height: 700px; 
+	top:0;
+	left:0;
+	background:#3c4246;
+	display: inline-block;
+	float:left;
+
+
+}
+
+#bartitle{
+	text-decoration: none;
+	color: #666666; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 28px;
+	margin-left: 40px; 
+
+}
+
+#center {
+	width:792px; 
+	height:700px;
+	margin:0 auto;
+	background:#FFFFFF;
+	display: inline-block;
+
+}
+
+#topc {
+
+	height:300px;
+	
+}
+
+#right {
+	width:300px; 
+	height:700px;
+	float: right;
+	background:#3c4246;
+	display: inline-block;
+
+}
+
+#friends{
+	height: 40px;
+	width: 300px;
+	background:url(4.png) 0 0 no-repeat;
+	margin-top: 5px;
+	margin-left: 20px;
+	
+}
+
+#lazy{
+	height: 1px;
+	width: 300px;
+	background-color: #111111;
+}
+
+#friend2{
+	height: 76px; 
+	width: 300px;
+	background:#3c4246;
+}
+
+#friend2:hover{
+	background: #66CCFF;
+}
+
+#hpic{
+	margin-top: 8px;
+	border-radius: 8px;
+	height: 60px;
+	width: 60px;
+	margin-left: 10px; 
+	background-size: contain;
+	background-position: center center;
+	float:left;
+	display: inline-block;
+}
+#Name{
+
+	text-decoration: none;
+	color: #EEEEEE; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 20px;
+	margin-left: 80px;
+	margin-top: 5px;
+	padding-top: 20px;
+}
+#messcount{
+	text-decoration: none;
+	color: #888888; 
+	font-family: Helvetica, sans-serif; 
+	font-size: 13px;
+	margin-left: 80px;
+	margin-top: 0px;
+}
+
+#credit{
+	margin: 0 auto;
+	text-align: center;
+	font-family: Helvetica, sans-serif; 
+	font-size: 9px;
+	color: #444444;
+
+}
